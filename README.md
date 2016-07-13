@@ -180,7 +180,7 @@ Android：
 		
 		示例:
 	
-		```objective-c
+		```
 		//EUExDemoPlugin.m中
 		
 		static NSDictionary *AppLaunchOptions;
@@ -193,8 +193,8 @@ Android：
 		}
 		```
 
-		```java
-		    public static void onApplicationCreate(Context context) {
+		```
+		    public static void onApplicationCreate(Context context) 			{
 		        if (context instanceof WidgetOneApplication) {
 		            WidgetOneApplication application = (WidgetOneApplication) context;
 		        }
@@ -204,7 +204,7 @@ Android：
 		            EBrowserActivity activity = (EBrowserActivity) context;
 		        }
 		    }
-```
+	```
 	
 	
 * 运行调试
