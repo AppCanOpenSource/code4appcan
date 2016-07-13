@@ -148,7 +148,7 @@
 		
 		iOS:
 		
-		```objective-c
+		```
 			+ (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
 			+ (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken;
 			+ (void)application:(UIApplication *)app didFailToRegisterForRemoteNotificationsWithError:(NSError *)err;
@@ -177,36 +177,8 @@ Android：
     		public static void onActivityStop(Context context)
     		public static void onActivityDestroy(Context context)
     ```
-		
-		示例:
-	
-		```
-		//EUExDemoPlugin.m中
-		
-		static NSDictionary *AppLaunchOptions;
-		
-		+ (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
-		    NSLog(@"app launched");
-		    //存储launchOptions
-		    AppLaunchOptions = launchOptions;
-		    return YES;
-		}
-		```
-
-		```
-		    public static void onApplicationCreate(Context context) 			{
-		        if (context instanceof WidgetOneApplication) {
-		            WidgetOneApplication application = (WidgetOneApplication) context;
-		        }
-		    }
-		    public static void onActivityCreate(Context context) {
-		        if (context instanceof EBrowserActivity) {
-		            EBrowserActivity activity = (EBrowserActivity) context;
-		        }
-		    }
-	```
-	
-	
+			
+		**注意不可在生命周期方法内做耗时的操作，否则会出现页面卡死的现象。**
 * 运行调试
 * 插件打包
 	* 创建目录
