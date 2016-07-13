@@ -205,7 +205,6 @@ Android：
 		        }
 		    }
 ```
-
 		**注意不可在生命周期方法内做耗时的操作，否则会出现页面卡死的现象。**
 	
 * 运行调试
@@ -219,17 +218,6 @@ Android：
 	
 
 
-
-## 常用引擎插件功能介绍
-
-* uexWidget
-* uexWindow
-
-* uexGestureUnlock手势锁
-* uexBackgroud
-* 启动图、广告图
-* 代码调试
-* 自定义引擎
 
 ## AppCan4.0引擎插件新技术
 
