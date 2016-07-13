@@ -184,7 +184,7 @@ Android：
 	* 创建目录
 	* 更新日志
 	* iOS
-	![Markdown](img/ios14.png)
+	![Markdown](img/iOS14.png)
 	* Android
 	![Markdown](img/20160413-1@2x.png)
 	
