@@ -19,8 +19,8 @@
 * [ 聊天窗口 ](https://github.com/AppCanOpenSource/code4appcan/tree/master/window)
 
 ## FAQ
-* [ 端开发 ](https://github.com/AppCanOpenSource/code4appcan/tree/master/FAQ/front_dev)
-* [ 其他 ](https://github.com/AppCanOpenSource/code4appcan/tree/master/FAQ/other)
+* [ 端开发 ](https://github.com/AppCanOpenSource/code4appcan/tree/master/window)
+* [ 其他 ](https://github.com/AppCanOpenSource/code4appcan/tree/master/window)
 
 ## 案例分析
 
