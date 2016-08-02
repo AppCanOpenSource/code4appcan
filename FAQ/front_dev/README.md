@@ -1,27 +1,25 @@
-# AppCan前端开源技术
+# FAQ-端开发
 
-## 引擎
+1. 使用uexBackground插件上传appstore被拒
 
-* [ 引擎架构设计 ](https://github.com/AppCanOpenSource/code4appcan/tree/master/engine)
-* [ 如何调试引擎 ](https://github.com/AppCanOpenSource/code4appcan/tree/master/engine)
-* [ 集成引擎到其他原生工程 ](https://github.com/AppCanOpenSource/code4appcan/tree/master/engine)
-* [ 自定义引擎 ](https://github.com/AppCanOpenSource/code4appcan/tree/master/engine)
-* [ uexWidget ](https://github.com/AppCanOpenSource/code4appcan/tree/master/widget)
-* [ uexWindow ](https://github.com/AppCanOpenSource/code4appcan/tree/master/window)
+具体问题描述：
 
-## 插件
-* [ 界面布局之uexNBListView ](https://github.com/AppCanOpenSource/code4appcan/tree/master/window)
-* [ 界面布局之uexChart ](https://github.com/AppCanOpenSource/code4appcan/tree/master/window)
-* [ 支付之uexAlipay ](https://github.com/AppCanOpenSource/code4appcan/tree/master/window)
-* [ 支付之uexAlipay ](https://github.com/AppCanOpenSource/code4appcan/tree/master/window)
+使用uexBackground插件上传appstore被拒，官方回复拒绝的理由大概的意思是需要添加一个使用后台持续定位原因的描述，appcan的应用该如何添加这个描述？
 
-## 前端UI
-* [ 聊天窗口 ](https://github.com/AppCanOpenSource/code4appcan/tree/master/window)
+回复：
 
-## FAQ
-* [ 端开发 ](https://github.com/AppCanOpenSource/code4appcan/tree/master/window)
-* [ 其他 ](https://github.com/AppCanOpenSource/code4appcan/tree/master/window)
+如下图，将uexLocation插件包解压，编辑uexlocation.plist文件，在下图红线箭头指向的标签内填入后台定位描述信息
 
-## 案例分析
+![Markdown](location.png)
+
+	
+	
+2. 如何打包生成webapp
+	
+3. Andorid应用界面切换闪屏
+
+
+
+
 
 
