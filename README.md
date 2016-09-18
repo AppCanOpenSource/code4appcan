@@ -8,7 +8,7 @@
 * [ Chrome远程调试Android插件及应用 ](https://github.com/AppCanOpenSource/code4appcan/tree/master/window)
 * [ uexNBListView插件使用详解 ](https://github.com/AppCanOpenSource/code4appcan/tree/master/window)
 * [ uexInAppPurchase(内购插件)在实际场景中的应用 ](https://github.com/AppCanOpenSource/code4appcan/tree/master/window)
-* [ uexEaseMob插件使用详解 ](https://github.com/AppCanOpenSource/code4appcan/tree/master/window)
+* [ uexEasemob插件使用详解 ](https://github.com/AppCanOpenSource/code4appcan/tree/master/window)
 * [ uexUmeng(友盟)插件使用详解 ](https://github.com/AppCanOpenSource/code4appcan/tree/master/window)
 
 ## 前端UI
