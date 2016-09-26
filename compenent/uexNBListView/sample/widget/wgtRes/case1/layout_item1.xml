@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root layoutId = "1" layoutType = "${type1}">
+    <linearlayout width = "-1" height = "250" background = "#ffffff"
+                  gravity = "centerY">
+        <linearlayout orientation = "horizontal" width = "-1"
+                      height = "-2">
+            <linearlayout orientation = "vertical" width = "-1"
+                          height = "-1" weight = "1"  gravity = "centerX">
+                <img width = "-2" height = "-2" src = "${img1}"
+                     onClick = "onListViewItemClick" id = "img1"/>
+                <text id = "txt1" width = "-2" height = "-2" text="${text1}" textSize = "${text1-size}"
+                      margin = "0 5" textColor = "${text1-color}"/>
+            </linearlayout>
+            <linearlayout orientation = "vertical" width = "-1"
+                          height = "-1" weight = "1" gravity = "centerX">
+                <img width = "-2" height = "-2" src = "res://case1/005.png"
+                     onClick = "onListViewItemClick" id = "img2"/>
+                <text id = "txt2" width = "-2" height = "-2" text="${text2}" textSize = "13" visible = "${visible2}"
+                      margin = "0 5" textColor = "#000000"/>
+            </linearlayout>
+            <linearlayout orientation = "vertical" width = "-1"
+                          height = "-1" weight = "1"  gravity = "centerX">
+                <img width = "-2" height = "-2" src = "res://case1/006.png"
+                     onClick = "onListViewItemClick" id = "img3"/>
+                <text id = "txt3" width = "-2" height = "-2" text="${text3}" textSize = "13"
+                      margin = "0 5" textColor = "#000000"/>
+            </linearlayout>
+            <linearlayout orientation = "vertical" width = "-1"
+                          height = "-1" weight = "1"  gravity = "centerX">
+                <button width = "-2" height = "-2" background = "${button-bg}"
+                        text="${button-text}" textSize = "${button-textSize}"
+                        textColor = "${button-textColor}"
+                     onClick = "onListViewItemClick" id = "img4"/>
+                <text id = "txt4" width = "-2" height = "-2" text="${text4}" textSize = "13"
+                      margin = "0 5" textColor = "#000000"/>
+            </linearlayout>
+        </linearlayout>
+    </linearlayout>
+</root>

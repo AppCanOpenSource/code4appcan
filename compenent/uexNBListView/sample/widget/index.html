@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" href="css/fonts/font-awesome.min.css">
+        <link rel="stylesheet" href="css/ui-box.css">
+        <link rel="stylesheet" href="css/ui-base.css">
+        <link rel="stylesheet" href="css/ui-color.css">
+        <link rel="stylesheet" href="css/appcan.icon.css">
+        <link rel="stylesheet" href="css/appcan.control.css">
+        <style>
+        .ub {
+            display: -webkit-box !important;
+            display: box !important;
+            position:relative;
+        }
+        .um-vp .up {
+            top: 0;
+            left: 0;
+            width: 100%;
+            min-height: 100%;
+            max-height: 100%;
+            position: absolute;
+            border: 0
+        }
+        .ub-ver
+        {
+            -webkit-box-orient:vertical;
+            box-orient:vertical;
+        }
+        
+        .uh, .uf {
+            display: block;
+            width: 100%;
+            font-size: 1em;
+        }
+        
+        .up .uh, .up .uf, .pos_re {
+            position: relative
+        }
+        
+        .uh .ut, .uf .ut {
+            padding: .72em 1em .72em;
+            margin: 0;
+        }
+        
+        /*基础标题字体颜色*/
+        .bc-text-head {
+            color: white;
+        }
+        
+        /*基础header颜色*/
+        .bc-head {
+            background-color: #00A1EA;
+        }
+        
+        /*.uh{
+            border:10px solid;
+            border-color: #FFFF00
+        }*/
+       
+       .navHeader
+       {
+            height: 2.75em;
+            display:-webkit-box;
+             -webkit-box-orient:vertical;
+             -webkit-box-align:center;
+            -webkit-box-pack:center;
+           
+       }
+       .navTab 
+       {
+            display:-webkit-box;
+            -webkit-box-align:center;
+            -webkit-box-pack:center;
+            width:50%;
+            border:1px solid blue;
+       }
+       .navTabItemActive
+       {
+          color: #00FF00;
+          
+       }
+       .navTabItem 
+       {
+           margin-left: 1em;
+           margin-right: 1em;
+           
+       }
+              
+              
+       .navTabItemLineC
+       {
+            background-color: #C9302C;
+            height: 0.125em;
+            width: 36%;
+            top: 0.375em;
+            position: relative;
+            
+       }        
+       
+        .navTabItemLine 
+       {
+            background-color: #00FF00;
+            height: 100%;
+            width: 46%;
+
+       }     
+                        
+                        
+               
+        
+        </style>
+    </head>
+    <body class="um-vp" ontouchstart>
+        <div id="page_0" class="up ub ub-ver" tabindex="0">
+            <!--header开始-->
+            <div id="header" class="bc-text-head bc-head navHeader">
+            
+                <div class="navTab">
+                <div class="navTabItem navTabItemActive">广场</div>
+                <div class="navTabItem" onclick="btnClick()">参赛</div>
+                </div>
+                <div class="navTabItemLineC">
+                    <div class="navTabItemLine"></div>
+                    <div class="navTabItemLine"></div>
+                </div>
+            </div>
+            <!--header结束--><!--content开始-->
+            <div id="content" class="ub-f1 tx-l ">
+
+            </div>
+            <!--content结束-->
+
+        </div>
+        <script src="js/appcan.js"></script>
+        <script src="js/appcan.control.js"></script>
+        <script src="home/homeList.js"></script>
+    </body>
+    <script>
+        appcan.ready(function() {
+            var titHeight = $('#header').offset().height;
+            //appcan.frame.open("content", "index_content.html", 0, titHeight);
+            //window.onorientationchange = window.onresize = function() {
+            //    appcan.frame.resize("content", 0, titHeight);
+            //}
+
+            var contentHeight = document.body.offsetHeight;
+            var contentW = document.body.offsetWidth;
+            
+            registerListViewCallBack();
+
+            homeInitLayout();
+
+            homeNew(titHeight, contentW, contentHeight-titHeight);
+            homeSetItems();
+        });
+        
+        function btnClick() {
+            alert('aaa');
+        }
+    </script>
+</html>

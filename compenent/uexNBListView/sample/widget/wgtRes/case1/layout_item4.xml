@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root layoutId = "4">
+    <linearlayout orientation = "vertical" width = "-1"
+                  height = "70" background="#ffffff">
+        <text width = "-1" height = "2" background = "#dddddd"/>
+    </linearlayout>
+</root>

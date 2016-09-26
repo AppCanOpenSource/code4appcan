@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root layoutId = "1">
+    <linearlayout width = "-1" height = "-2" background = '#FFFFFF'>
+    	<relativelayout width = "-1" margin = "34 28 34 0" background = '#DDDDDD'>
+    		<linearlayout id = 'li-1' width = '-2' height = '-2' float = 'center' orientation = "horizontal">
+    			<button id = "button1" width = "-2" height = "-2" text="${title}"/>
+            	<button id = "button2" width = "-2" height = "-2" text="搜索"/>
+    		</linearlayout>
+    	</relativelayout>
+
+    	<linearlayout width = '-1' margin = "34 28 34 0" orientation = "horizontal">
+    		<button id = "headerBtn" width = "-2" height = "-2" text="头像"/>
+    		<linearlayout weight = '1' margin="28 0 0 0">
+    			<text id = "txt" width = "-2" height = "-2" text = "性能俱乐部" textColor= "#000000" weight = '1'/>
+    			<text id = "txt2" width = "-2" height = "-2" text = "1分钟前" textColor= "#000000" weight = '1'/>
+    		</linearlayout>
+    	</linearlayout>
+
+    	<text id = "txt2Content" width = "-1" height = "-2" margin = "34 28 34 0" text = "南极三日游，线路美妙，大师带队寻找最美拍照机位，赶快报名参加吧~" textColor= "#000000"/>
+
+    	<linearlayout width = '-1' margin = '34 28 34 0' orientation = 'horizontal' background = '#ff0000'>
+            <img weight = '1' height = "-2" src = "res://case1/BadongChu.jpg"/>
+            <linearlayout width = '14'>
+            </linearlayout>
+            <img weight = "1" height = "-2" src = "res://case1/BadongChu.jpg"/>
+            <linearlayout width = '14'>
+            </linearlayout>
+            <img weight = "1" height = "-2" src = "res://case1/BadongChu.jpg"/>
+        </linearlayout>
+
+
+        <linearlayout width = '-1' height = '28' background = '#dddddd'>
+        </linearlayout>
+
+
+
+    </linearlayout> 
+</root>

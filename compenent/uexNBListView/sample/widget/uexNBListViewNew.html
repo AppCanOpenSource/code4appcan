@@ -1,0 +1,393 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
+    <script type="text/javascript">
+    var isCreateContainer = false;
+    function initLayout(){
+        var id = document.getElementById("listViewId").value;
+        var params = {
+            listViewId:id,
+            layout:{
+//                center:["res://case1/layout_item1.xml","res://case1/layout_item2.xml","res://case1/layout_item3.xml"],
+                center:['res://layoutxml/home/homeListItemLayout.xml'],
+                left:["res://case1/layout_left.xml"],
+                right:["res://case1/layout_right.xml"]
+            }
+        };
+        var data = JSON.stringify(params);
+        uexNBListView.initLayout(data);
+    }
+
+    function openNBListView(){
+        var id = document.getElementById("listViewId").value;
+        var containerID = document.getElementById("containerID").value;
+        var containerIndex = document.getElementById("containerIndex").value;
+        var w = 1000;
+        var h = 1800;
+        var top = 600;
+
+        var params = {
+                listViewId:id,
+                left: 0,//(必选) 左间距
+                top: top,//(必选) 上间距
+                width:w,//(必选) 宽
+                height:h-top,//(必选) 高
+                offsetLeft:400,
+                offsetRight:300,
+                openType:0,//(可选) 打开方式,0-webView,1-window,2-容器
+                swipeMode:2,//(可选) 侧滑模式，0-右滑，1-左滑，2-左右滑，3-不能滑。默认3
+                containerID:containerID,
+                containerIndex:containerIndex,
+                //backgroundColor:"#ff0000",
+                refreshMode:3,//(可选) 刷新模式，0-无，1-下拉，2-上拉，3-上拉下拉。默认3
+                header:{
+                    url:"res://case1/html/header.html"
+                },
+                footer:{
+                    url:"res://case1/html/footer.html"
+                }
+        };
+        var data = JSON.stringify(params);
+        uexNBListView.open(data);
+    }
+
+    function setItems(){
+        var id = document.getElementById("listViewId").value;
+        var params = {
+            listViewId:id,
+            dataList:[
+                /*{
+                    center:{
+                        "type1":1,
+                        "text1" : "测试1",
+                        "text2" : "测试2",
+                        "text3" : "测试3",
+                        "text4" : "测试4",
+                        "img1":"res://case1/006.png",
+                        "text1-color":"#ff0000",
+                        "text1-size":15,
+                        "visible2":0,
+                        "button-text":"btn1",
+                        "button-textSize":20,
+                        "button-textColor":"#00ff00",
+                        "button-bg":"#dddddd"
+                    },
+                    left:{
+                        "layoutId" : "left",
+                        "left-button" : "left1"
+                    },
+                    right:{
+                        "layoutId" : "right",
+                        "right-button" : "right1"
+                    }
+                },*/
+                /*{
+                    center:{
+                        "type1":1,
+                        "text1" : "测试5",
+                        "text2" : "测试6",
+                        "text3" : "测试7",
+                        "text4" : "测试8",
+                        "img1":"res://case1/007.png",
+                        "text1-color":"#00ff00",
+                        "text1-size":18,
+                        "visible2":2,
+                        "button-text":"btn2",
+                        "button-textSize":10,
+                        "button-textColor":"#ff0000",
+                        "button-bg":"res://case1/004.png"
+                    },
+                    left:{
+                        "layoutId" : "left",
+                        "left-button" : "left2"
+                    },
+                    right:{
+                        "layoutId" : "right",
+                        "right-button" : "right2"
+                    }
+                },
+                {
+                    center:{
+                        "layoutId":2,
+                        "content_bg":"#ff0000",
+                        "left_pic":"res://case1/BaDongQian.jpg"
+                    },
+                    left:{
+                        "layoutId" : "left",
+                        "left-button" : "left3"
+                    },
+                    right:{
+                        "layoutId" : "right",
+                        "right-button" : "right3"
+                    }
+                },*/
+                /*{
+                    center:{
+                        "layoutId":2,
+                        "content_bg":"#00ff00",
+                        "left_pic":"res://case1/BadongChu.jpg"
+                    },
+                    left:{
+                        "layoutId" : "left",
+                        "left-button" : "left4"
+                    },
+                    right:{
+                        "layoutId" : "right",
+                        "right-button" : "right4"
+                    }
+                }*/
+                {
+                    center:{
+                        "type":2,
+                        "backgroundColor":"#dddddd",
+                        "title":"平凡的世界"
+                    }
+                },
+                {
+                    center:{
+                        "type":2,
+                        "backgroundColor":"#ffffff",
+                        "title":"三国演义"
+                    }
+                }
+            ]
+        };
+        var data = JSON.stringify(params);
+        uexNBListView.setItems(data);
+    }
+
+    function reload(){
+        var id = document.getElementById("listViewId").value;
+        var params = {
+            listViewId:id
+        };
+        var data = JSON.stringify(params);
+        uexNBListView.reload(data);
+    }
+
+    function closeNBListView(){
+        var id = document.getElementById("listViewId").value;
+        var params = [id];
+        var data = JSON.stringify(params);
+        uexNBListView.close(data);
+    }
+
+    function updateNBListView(){
+        var id = document.getElementById("listViewId").value;
+        var index = document.getElementById("listViewIndex").value;
+        var params = {
+            listViewId:id,
+            index:index,
+            data:{
+                center:{
+                    "text1":"更新我" + index
+                }
+            }
+        };
+        var data = JSON.stringify(params);
+        uexNBListView.update(data);
+    }
+
+    function deleteNBListView(){
+        var id = document.getElementById("listViewId").value;
+        var index = document.getElementById("listViewIndex").value;
+        var params = {
+            listViewId:id,
+            indexes:[index]
+        };
+        var data = JSON.stringify(params);
+        uexNBListView.delete(data);
+    }
+
+    function addNBListView(){
+        var id = document.getElementById("listViewId").value;
+        var index = document.getElementById("listViewIndex").value;
+        var params = {
+            listViewId:id,
+            index:index,
+            dataList:[
+                /*{
+                    center:{
+                        "type1":1,
+                        "text1" : "add1",
+                        "text2" : "add2",
+                        "text3" : "add3",
+                        "text4" : "add4",
+                        "img1":"res://case1/006.png",
+                        "text1-color":"#000000",
+                        "text1-size":15,
+                        "visible2":0,
+                        "button-text":"btn1",
+                        "button-textSize":12,
+                        "button-textColor":"#00ff00",
+                        "button-bg":"res://case1/005.png"
+                    },
+                    left:{
+                        "layoutId" : "left",
+                        "left-button" : "addleft1"
+                    },
+                    right:{
+                        "layoutId" : "right",
+                        "right-button" : "addright1"
+                    }
+                },
+                {
+                    center:{
+                        "layoutId":2,
+                        "content_bg":"#00ff00",
+                        "left_pic":"res://case1/BaDongQian.jpg"
+                    },
+                    left:{
+                        "layoutId" : "left",
+                        "left-button" : "addleft2"
+                    },
+                    right:{
+                        "layoutId" : "right",
+                        "right-button" : "addright2"
+                    }
+                }*/
+                {
+                    center:{
+                        "type":2,
+                        "title":"insert"
+                    }
+                }
+            ]
+        };
+        var data = JSON.stringify(params);
+        uexNBListView.insert(data);
+    }
+
+    function showNBListView(){
+        var id = document.getElementById("listViewId").value;
+        var params = {
+            listViewId:id
+        };
+        var data = JSON.stringify(params);
+        uexNBListView.show(data);
+    }
+
+    function hideNBListView(){
+        var id = document.getElementById("listViewId").value;
+        var params = {
+            listViewId:id
+        };
+        var data = JSON.stringify(params);
+        uexNBListView.hide(data);
+    }
+
+    window.uexOnload = function(type){
+        if(type == 0){
+            uexNBListView.cbInitLayout = cbInitLayout;
+            uexNBListView.cbOpen = cbOpen;
+            uexNBListView.cbSetItems = cbSetItems;
+            uexNBListView.cbReload = cbReload;
+            uexNBListView.onLeftClick = onLeftClick;
+            uexNBListView.onRightClick = onRightClick;
+            uexNBListView.onListViewItemClick = onListViewItemClick;
+            uexNBListView.cbUpdate = cbUpdate;
+            uexNBListView.cbInsert = cbInsert;
+            uexNBListView.cbDelete = cbDelete;
+            uexNBListView.onHtmlEvent = onHtmlEvent;
+        }
+        var containerID = document.getElementById("containerID").value;
+        var containerIndex = document.getElementById("containerIndex").value;
+        var w = 1000;
+        var h = 1800;
+        var top = 600;
+        var jsonStr = {
+            id : containerID, //容器id
+            x : 0, //容器位置x坐标
+            y : 0, //容器位置y坐标
+            w : w, //容器位置w宽度
+            h : h-top //容器位置h高度
+        };
+        uexWindow.createPluginViewContainer(JSON.stringify(jsonStr));
+        uexWindow.cbCreatePluginViewContainer = function(opId, dataType, result) {
+            if(opId == containerID){
+                alert("container create success!");
+            }
+        };
+    }
+
+    function onHtmlEvent(data){
+        alert("onHtmlEvent:" + data);
+    }
+
+    function cbDelete(data){
+        alert("cbDelete:" + data);
+    }
+
+    function cbInsert(data){
+        alert("cbInsert:" + data);
+    }
+
+    function cbUpdate(data){
+        alert("cbUpdate:" + data);
+    }
+
+    function onListViewItemClick(data){
+        alert("onListViewItemClick:" + data);
+    }
+
+    function onRightClick(data){
+        alert("onRightClick:" + data);
+    }
+    function onLeftClick(data){
+        alert("onLeftClick:" + data);
+    }
+    function cbInitLayout(info){
+        alert('cbInitLayout: '+info);
+    }
+
+    function cbOpen(info){
+        alert('cbOpen: '+info);
+    }
+
+    function cbSetItems(info){
+        alert('cbSetItems: '+info);
+    }
+
+    function cbReload(info){
+        alert('cbReload: '+info);
+    }
+
+    </script>
+</head>
+
+<body>
+<div class="conbor">
+    <div class="consj">
+
+        Id:<input class="textbox" type="text" value="1" id = "listViewId">
+        Index:<input class="textbox" type="text" value="1" id = "listViewIndex">
+        containerID:<input class="textbox" type="text" value="0" id = "containerID">
+        containerIndex:<input class="textbox" type="text" value="0" id = "containerIndex">
+        <br>
+
+            <input class='btn' type='button' value='init' onclick='initLayout()'>
+
+            <input class='btn' type='button' value='open' onclick='openNBListView()'>
+
+            <input class='btn' type='button' value='setItems' onclick='setItems()'>
+
+            <input class='btn' type='button' value='close' onclick='closeNBListView()'>
+
+            <input class='btn' type='button' value='update' onclick='updateNBListView()'>
+
+            <input class='btn' type='button' value='delete' onclick='deleteNBListView()'>
+
+            <input class='btn' type='button' value='insert' onclick='addNBListView()'>
+
+            <input class='btn' type='button' value='show' onclick='showNBListView()'>
+
+            <input class='btn' type='button' value='hide' onclick='hideNBListView()'>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root layoutId = "left">
+    <linearlayout id = "content" orientation = "horizontal" width = "300"
+                  height = "-2">
+        <button id = "txt" width = "-1" height = "-1" text="${left-button}" textSize = "14"
+              onClick = "onLeftClick" textColor = "#ffffff"/>
+    </linearlayout>
+</root>
