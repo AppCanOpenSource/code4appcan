@@ -42,7 +42,7 @@ function homeSetItems(){
     {
         var testData = {
             center:{
-                "layoutId":1,
+                "layoutId":"1",
                 "backgroundColor":"#dddddd",
                 "title":"平凡的世界",
                 "height":100
