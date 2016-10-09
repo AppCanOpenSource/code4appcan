@@ -13,6 +13,7 @@
 
 ## 前端UI
 * [ 聊天窗口 ](https://github.com/AppCanOpenSource/code4appcan/tree/master/window)
+* [在AppCan中使用lazyload加载图片](https://github.com/AppCanOpenSource/code4appcan/blob/master/front/%E5%9C%A8AppCan%E4%B8%AD%E4%BD%BF%E7%94%A8lazyload%E5%8A%A0%E8%BD%BD%E5%9B%BE%E7%89%87.md)
 
 ## FAQ
 * [ 端开发 ](https://github.com/AppCanOpenSource/code4appcan/tree/master/FAQ/front_dev)
