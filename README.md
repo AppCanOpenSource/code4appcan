@@ -11,6 +11,7 @@
 * [ uexEasemob插件使用详解 ](https://github.com/AppCanOpenSource/code4appcan/tree/master/window)
 * [ uexUmeng(友盟)插件使用详解 ](https://github.com/AppCanOpenSource/code4appcan/tree/master/window)
 * [uexNBListView构建原生布局-列表界面](https://github.com/AppCanOpenSource/code4appcan/tree/master/compenent/uexNBListView)
+* [AppCan应用开发之插件实践篇-分享插件](https://github.com/code4appcan/Plugin-Share)
 
 ## 前端UI
 * [ 聊天窗口 ](https://github.com/AppCanOpenSource/code4appcan/tree/master/window)
@@ -22,4 +23,6 @@
 
 ## 案例分析
 
+* [AppCan应用开发之源码篇-嗡嗡旅游](https://github.com/code4appcan/wengwengTour)
+* [AppCan应用开发之源码篇-海外购](https://github.com/code4appcan/overseaGo)
 
