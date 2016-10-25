@@ -6,10 +6,11 @@
 
 ## 插件
 * [ Chrome远程调试Android插件及应用 ](https://github.com/AppCanOpenSource/code4appcan/blob/master/plugin/Chrome%E8%B0%83%E8%AF%95Android%E5%BA%94%E7%94%A8/Chrome%E8%B0%83%E8%AF%95Android%E5%BA%94%E7%94%A8.md)
-* [ uexNBListView插件使用详解 ](https://github.com/AppCanOpenSource/code4appcan/tree/master/window)
+* [ uexNBListView插件使用详解 ](https://github.com/AppCanOpenSource/code4appcan/blob/master/plugin/uexNBListView%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8%E8%AF%A6%E8%A7%A3/uexNBListView%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8%E8%AF%A6%E8%A7%A3.md)
 * [ uexInAppPurchase(内购插件)在实际场景中的应用 ](https://github.com/AppCanOpenSource/code4appcan/tree/master/window)
 * [ uexEasemob插件使用详解 ](https://github.com/AppCanOpenSource/code4appcan/tree/master/window)
 * [ uexUmeng(友盟)插件使用详解 ](https://github.com/AppCanOpenSource/code4appcan/tree/master/window)
+* [uexNBListView构建原生布局-列表界面](https://github.com/AppCanOpenSource/code4appcan/tree/master/compenent/uexNBListView)
 
 ## 前端UI
 * [ 聊天窗口 ](https://github.com/AppCanOpenSource/code4appcan/tree/master/window)
