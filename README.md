@@ -34,7 +34,7 @@
 
 ## Widget SDK
 
-* 敬请期待...
+* [接入文档](https://github.com/AppCanOpenSource/appcan-docs-v2/blob/4.0-dev/%E5%BA%94%E7%94%A8%E5%BC%95%E6%93%8E/widgetSDK/Widget%20SDK%20%E6%8E%A5%E5%85%A5%E6%96%87%E6%A1%A3.md)
 
 ## React Native
 
